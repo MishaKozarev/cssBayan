@@ -1,0 +1,59 @@
+:root{
+    box-sizing: border-box;
+    font-size: calc(1vw + 0.6em);
+}
+body{
+    background: rgb(76, 78, 78);
+}
+header{
+    max-width: 70%;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+main{
+    max-width: 70%;
+    margin: 0 auto;
+}
+.container{
+    width: 100%;
+    box-shadow: 0.5rem 0.5rem 1rem black;
+}
+.item {
+    cursor: pointer;
+}
+.item__header {
+    background: rgb(25, 78, 99);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8em;
+    cursor: pointer;
+    transition: color .7s ease-out;
+}
+.item__header:hover{
+    color: white;
+}
+.input:checked + .picture{
+    display: block;
+}
+.title {
+    font-size: 1em;
+    font-weight: 700;
+    margin: 0 1em;
+}
+.btn {
+    width: 10%;
+    height: 100%;
+    background-image: url(./assets/svg/icons8-крестик-78.png);
+
+}
+.picture {
+    background: white;
+    align-items: center;
+    display: none;
+}
+.img{
+    margin: 1em auto;
+    width: 70%;
+    height: 70%;
+}
