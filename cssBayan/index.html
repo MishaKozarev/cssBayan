@@ -6,20 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <header><h1>cssBayan</h1></header>
-    <main>
+    <div class="wrapper">
+        <h1>cssBayan</h1>
         <div class="container">
             <div class="item">
-                <input type="radio" class="input" id="mem-1" name = 'input' checked>
-                <label class="item__header">
-                    <span class="title">Боги языков программирования для начинающих</span>
-                    <div class="btn"></div>
+                <input type="radio" name="mem" id="mem-1" checked>
+                <label for="mem-1">
+                    <div class="item__header">
+                        <p>Боги языков</p>
+                        <span class="btn">+</span>
+                    </div>
+                    <img class="mem__img" src="./assets/image/Mem1.jpg" alt="mem1">
                 </label>
-                <label class="picture"><img class="img" src="./assets/image/Mem1.jpg" alt="mem" width="80%" height="30%"></label>
+            </div>
+            <div class="item">
+                <input type="radio" name="mem" id="mem-2">
+                <label for="mem-2">
+                    <div class="item__header">
+                        <p>Безопасное приложение</p>
+                        <span class="btn">+</span>
+                    </div>
+                    <img class="mem__img" src="./assets/image/Mem2.jpg" alt="mem2">
+                </label>
+            </div>
+            <div class="item">
+                <input type="radio" name="mem" id="mem-3">
+                <label for="mem-3">
+                    <div class="item__header">
+                        <p>Не мой тип</p>
+                        <span class="btn">+</span>
+                    </div>
+                    <img class="mem__img" src="./assets/image/Mem3.jpg" alt="mem3">
+                </label>
+            </div>
+            <div class="item">
+                <input type="radio" name="mem" id="mem-4">
+                <label for="mem-4">
+                    <div class="item__header">
+                        <p>Путь программирования</p>
+                        <span class="btn">+</span>
+                    </div>
+                    <img class="mem__img" src="./assets/image/Mem4.jpg" alt="mem4">
+                </label>
+            </div>
+            <div class="item">
+                <input type="radio" name="mem" id="mem-5">
+                <label for="mem-5">
+                    <div class="item__header">
+                        <p>Точность кода</p>
+                        <span class="btn">+</span>
+                    </div>
+                    <img class="mem__img" src="./assets/image/Mem5.jpg" alt="mem5">
+                </label>
             </div>
         </div>
-    </main>
+    </div>
 </body>
 </html>
