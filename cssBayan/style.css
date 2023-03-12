@@ -1,0 +1,126 @@
+:root{
+    box-sizing: border-box;
+    position: static;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: blue;
+}
+body{
+    background: rgb(159, 163, 163);
+}
+.wrapper{
+    max-width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1{
+    font-size: 2em;
+    color: black;
+    font-weight: 900;
+}
+.container{
+    width: 100%;
+}
+input{
+    display: none;
+}
+.item__header{
+    border-top: 0.1em solid rgb(89, 96, 99);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 0 1em;
+    font-weight: 700;
+    transition: all 1s ease;
+    height: 1.5em;
+
+}
+label{
+    display: block;
+    cursor: pointer;
+}
+.btn{
+    opacity: 0;
+    transition: all 1s ease;
+}
+.mem__img{
+    overflow: hidden;
+    max-width: 20em;
+    max-height: 0;
+    margin: 0 auto;
+    display: block;
+    padding: 0.2em 0;
+    transition: all 1s ease-out;
+    cursor: pointer;
+}
+
+
+input:checked ~ label .mem__img{
+    max-height: 100vh;
+}
+input:checked ~ label .item__header .btn{
+    transform: rotate(45deg);
+}
+input:checked ~ label .item__header{
+    color: black;
+}
+
+.item:active{
+    opacity: 0.7;
+}
+.item:active .subtitle{
+    color: blue;
+    transition: 0.3s;
+  }
+.item:active .btn{
+    color: blue;
+    transition: 0.3s;
+  }
+
+@media(hover:hover){
+    label:hover .mem__img{
+        max-height: 100vh;
+    }
+    label:hover .btn{
+        transform: rotate(45deg);
+        opacity: 1;
+    }
+    .container:hover span{
+        opacity: 1;
+        color: black;
+    }
+    .container:hover{
+        color: black;
+    }
+}
+
+@media(max-width:821px){
+    .mem__img{
+        max-width: 15em;
+    }
+    .item__header{
+        font-size: 0.8em;
+    }
+    h1{
+        font-size: 1.5em;
+    }
+    .item__header, .mem__img, label{
+        cursor: default;
+    }
+}
+@media(max-width:600px){
+    .mem__img{
+        max-width: 8em;
+    }
+    .item__header{
+        font-size: 0.6em;
+    }
+    h1{
+        font-size: 1.3em;
+    }
+}
+
